@@ -1,0 +1,23 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,6264.83,75177.96,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),RDS PostgreSQL,Amazon RDS for PostgreSQL,0,3293.6,39523.2,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (2 TB), Nodes (2), Instance Type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (1 TB)"
+My Estimate,US East (N. Virginia),Web Server,Amazon EC2 ,0,140.288,1683.46,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t2.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Application Server,Amazon EC2 ,0,141.488,1697.86,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t2.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Load Balancer,Application Load Balancer,0,852.05,10224.6,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),NAT,VPN Connection,0,0,0,USD,,Working days per month (22)
+My Estimate,US East (N. Virginia),NAT,Network Address Translation (NAT) Gateway,0,78.93,947.16,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),S3,S3 Standard,0,285.67,3428.04,USD,,"S3 Standard storage (10 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (500000), GET, SELECT, and all other requests from S3 Standard (50000000), Data returned by S3 Select (10 TB per month), Data scanned by S3 Select (10 TB per month)"
+My Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0,USD,,"DT Inbound: Internet (10 TB per month), DT Outbound: Amazon CloudFront (10 TB per month)"
+My Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,1472.8,17673.6,USD,,"Data transfer out to internet (10 TB per month), Data transfer out to origin (5 TB per month), Number of requests (HTTPS) (500000000 per month)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+NOTE,,,,,,,,,
+Scale down RDS DB instance from db.m5.4xlarge to db.m5.2xlarge and reduce the backup storage from 2TB to 1TB,,,,,,,,,
+Scale down EC2 Application Server instance from t2.xlarge to t2.large,,,,,,,,,
